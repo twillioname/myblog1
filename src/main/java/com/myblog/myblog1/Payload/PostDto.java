@@ -1,6 +1,5 @@
-package com.myblog.myblog12.Entity;
+package com.myblog.myblog1.Payload;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,14 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table( name= "posts")
-@Entity
-public class Post {
+public class PostDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private  long id;
+    private long id;
     private String title;
     private String description;
     private String content;
